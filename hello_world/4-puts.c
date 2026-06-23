@@ -1,4 +1,4 @@
-#stdio.h
+#include <stdio.h>
 
 /**
  * main - Prints a string of characters using puts and not printf
