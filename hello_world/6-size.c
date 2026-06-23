@@ -3,7 +3,7 @@
 /**
  * main - Each printf command prints a text includind the size of the type
  * it talks about
- * Retrun: Returns 0 if everythings works as planned
+ * Return: returns 0 if everything gets printed correctly
  */
 int main(void)
 {
