@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - for loop to print the alphabet in lowercase without q and e
+ * and breaking a new line at the end
  * Return: returns 0 if the code works as planned
  */
 int main(void)
@@ -15,6 +16,10 @@ int main(void)
 		else
 		{
 		putchar (i);
+			if (i == 122)
+			{
+			putchar(10);
+			}
 		}
 	}
 	return (0);
