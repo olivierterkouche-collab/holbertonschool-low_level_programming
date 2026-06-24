@@ -14,7 +14,7 @@ int main(void)
 	putchar(i);
 		if(i == 97)
 		{
-		putchar(10)
+		putchar(10);
 		}
 	}
 	return (0);
