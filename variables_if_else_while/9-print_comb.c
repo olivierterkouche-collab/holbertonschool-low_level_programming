@@ -14,6 +14,10 @@ int i;
 	putchar(i);
 	putchar(32);
 	putchar(44);
+		if (i == 57)
+		{
+		putchar(10);
+		}
 	}
 	return (0);
 }
