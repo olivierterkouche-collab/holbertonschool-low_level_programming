@@ -20,7 +20,7 @@ int i;
 		else
 		{
 		putchar(i);
-		putchar(10);
+		putchar(32);
 		}
 	}
 	return (0);
