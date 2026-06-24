@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - Generates a random number stored in n and then prints it tells
  * if it is positive negative or equal to zero
