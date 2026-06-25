@@ -3,4 +3,6 @@
 
 int _putchar(char c);
 
+int printPchar(void);
+
 #endif
