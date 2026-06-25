@@ -15,10 +15,7 @@ i = 1;
 		{
 		_putchar(j);
 		}
-		if (i == 10)
-		{
-		_putchar(10);
-		}
+	_putchar(10);
 	i++;
 	}
 }
