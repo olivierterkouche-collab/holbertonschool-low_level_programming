@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * printPchar - Prints "_pchar" folowed by a newline
+ * main - Prints "_pchar" folowed by a newline
  * Return: Returns 0 if the function was executed correctly
  */
 
-int printPchar(void)
+int main(void)
 {
 _putchar(95);
 _putchar(112);
