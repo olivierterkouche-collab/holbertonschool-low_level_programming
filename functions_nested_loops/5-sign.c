@@ -3,7 +3,7 @@
 /**
  * print_sign - prints a + if a number is positive a - if it's negative
  * or a 0 if it's equal to 0
- * @c: The value we are working on
+ * @n: The value we are working on
  *
  * Return: Returns 1 if n is positive or negative and 0 if it equals 0
  */
