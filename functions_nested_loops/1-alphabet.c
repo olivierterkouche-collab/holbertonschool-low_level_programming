@@ -2,7 +2,6 @@
 
 /**
  * print_alphabet - Prints the alphabet then adds a new line
- * Return: Returns 0 if the fonction is executed correctly
  */
 
 void print_alphabet(void)
@@ -16,5 +15,4 @@ char i;
 		_putchar(10);
 		}
 	}
-	return (0);
 }
