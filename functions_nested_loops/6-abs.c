@@ -2,12 +2,12 @@
 
 /**
  * _abs - Checks if the parametter is a positive number if not makes it one
- * @int: parametter we want to get the absolute value of
+ * @r: parametter we want to get the absolute value of
  *
  * Return: Returns the absolute value of the parameter
  */
 
-int _abs(int)
+int _abs(int r)
 {
 	if (r < 0)
 	{
