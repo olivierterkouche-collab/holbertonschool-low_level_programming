@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Prints characters using puts.
+ * Return: Returns 0 when the program was succesfully executed.
+ */
+
 int main(void)
 {
-puts("Programming is like building a multilingual puzzle");
-retrun: O;
+	puts("\"Programming is like building a multilingual puzzle");
+	retrun O;
 }
