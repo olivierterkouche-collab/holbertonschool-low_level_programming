@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - Prints characters using puts.
@@ -9,5 +8,5 @@
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	retrun (O);
+	retrun(O);
 }
