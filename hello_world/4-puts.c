@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-main()
+int main(void)
 {
 puts("Programming is like building a multilingual puzzle");
-retrun : O;
+retrun: O;
 }
