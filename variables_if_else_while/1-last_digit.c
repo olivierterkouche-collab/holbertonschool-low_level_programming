@@ -23,12 +23,8 @@ n = rand() - RAND_MAX / 2;
 if (n < 0)
 {
 	absVal = n * -1;
-	lastDigt = absVal % 10;
-	if (lastDigt > 5)
-	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, lastDigt);
-	}
-	else if (lastDigt < 6 && lastDigt != 0)
+	lastDigt = (absVal % 10) * -1;
+	if (lastDigt < 6 && lastDigt != 0)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigt);
 	}
