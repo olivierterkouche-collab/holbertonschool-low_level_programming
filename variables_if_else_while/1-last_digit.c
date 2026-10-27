@@ -14,44 +14,44 @@
 
 int main(void)
 {
-	int n;
-	int absVal;
-	int lastDigt;
+int n;
+int absVal;
+int lastDigt;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n < 0)
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n < 0)
+{
+	absVal = n * -1;
+	lastDigt = absVal % 10;
+	if (lastDigt > 5)
 	{
-		absVal = n * -1;
-		lastDigt = absVal % 10;
-		if (lastDigt > 5)
-		{
-			printf("Last digit of %d is %d and is greater than 5\n", n, lastDigt);
-		}
-		else if (lastDigt < 6 && lastDigt != 0)
-		{
-			printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigt);
-		}
-		else
-		{
-			printf("Last digit of %d is %d and is 0\n", n, lastDigt);
-		}
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastDigt);
+	}
+	else if (lastDigt < 6 && lastDigt != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigt);
 	}
 	else
 	{
-		lastDigt = n % 10;
-		if (lastDigt > 5)
-		{
-			printf("Last digit of %d is %d and is greater than 5\n", n, lastDigt);
-		}
-		else if (lastDigt < 6 && lastDigt != 0)
-		{
-			printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigt);
-		}
-		else
-		{
-			printf("Last digit of %d is %d and is 0\n", n, lastDigt);
-		}
+		printf("Last digit of %d is %d and is 0\n", n, lastDigt);
 	}
-	return (0);
+}
+else
+{
+	lastDigt = n % 10;
+	if (lastDigt > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastDigt);
+	}
+	else if (lastDigt < 6 && lastDigt != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigt);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is 0\n", n, lastDigt);
+	}
+}
+return (0);
 }
