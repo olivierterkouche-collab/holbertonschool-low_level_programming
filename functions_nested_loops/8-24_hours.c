@@ -15,21 +15,25 @@ while (i < 3)
 {
 	while (j < 10)
 	{
-		while (k < 6)
+		if (i == 2 && j > 3)
 		{
-			while (l < 10)
-			{
-			_putchar('0' + i);
-			_putchar('0' + j);
-			_putchar(':');
-			_putchar('0' + k);
-			_putchar('0' + l);
-			_putchar('\n');
-			l++;
-			}
-		l = 0;
-		k++;
+		return;
 		}
+			while (k < 6)
+			{
+				while (l < 10)
+				{
+				_putchar('0' + i);
+				_putchar('0' + j);
+				_putchar(':');
+				_putchar('0' + k);
+				_putchar('0' + l);
+				_putchar('\n');
+				l++;
+				}
+			l = 0;
+			k++;
+			}
 	k = 0;
 	j++;
 	}
