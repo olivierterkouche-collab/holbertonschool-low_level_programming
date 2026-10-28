@@ -2,11 +2,9 @@
 
 /**
  * jack_bauer - Print the time from 00:00 to 23:59
- *
- * Return: Returns 0 when the program successfully ended
  */
 
-int jack_bauer(void)
+void jack_bauer(void)
 {
 int i = 0;
 int j = 0;
