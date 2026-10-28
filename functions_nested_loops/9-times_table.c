@@ -18,11 +18,11 @@ for (i = 0; i < 10; i++)
 		if (mult > 9)
 		{
 			mult = mult / 10;
-			_putchat('0' + mult);
+			_putchar('0' + mult);
 			mult = i * j;
 			mult = mult % 10;
 		}
-		_purchar('0' + mult);
+		_putchar('0' + mult);
 		if (j != 9)
 		{
 			_putchar(',');
