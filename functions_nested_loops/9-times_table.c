@@ -8,25 +8,23 @@ void times_table(void)
 {
 int i;
 int j;
-int mult;
+int mult = i * j;
+int mod = mult % 10;
+int div = mult / 10;
 
 for (i = 0; i < 10; i++)
 {
 	for (j = 0; j < 10; j++)
 	{
-		mult = i * j;
 		if (mult > 9)
 		{
-			mult = mult / 10;
-			_putchar('0' + mult);
-			mult = i * j;
-			mult = mult % 10;
+			_putchar('0' + div);
 		}
-		else
+		else if (mult != 0)
 		{
 			_putchar(' ');
 		}
-		_putchar('0' + mult);
+		_putchar('0' + mod);
 		if (j != 9)
 		{
 			_putchar(',');
