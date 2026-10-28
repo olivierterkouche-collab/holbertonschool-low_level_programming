@@ -24,7 +24,7 @@ while (i < 3)
 			_putchar(':');
 			_putchar('0' + k);
 			_putchar('0' + l);
-			_purchar('\n');
+			_putchar('\n');
 			l++;
 			}
 		l = 0;
