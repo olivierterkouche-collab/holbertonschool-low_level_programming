@@ -13,7 +13,7 @@ int l = 0;
 
 while (i < 3)
 {
-	while (j < 10 && (i != 2 && j != 3 && k != 5 && l != 9))
+	while (j < 10)
 	{
 		while (k < 6)
 		{
