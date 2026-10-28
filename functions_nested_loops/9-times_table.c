@@ -22,6 +22,10 @@ for (i = 0; i < 10; i++)
 			mult = i * j;
 			mult = mult % 10;
 		}
+		else
+		{
+			_putchar(' ');
+		}
 		_putchar('0' + mult);
 		if (j != 9)
 		{
