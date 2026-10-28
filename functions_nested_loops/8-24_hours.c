@@ -35,5 +35,4 @@ while (i < 3)
 j = 0;
 i++;
 }
-return (0);
 }
