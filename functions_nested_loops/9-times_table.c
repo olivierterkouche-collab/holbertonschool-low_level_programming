@@ -6,8 +6,8 @@
 
 void times_table(void)
 {
-int i;
-int j;
+int i = 0;
+int j = 0;
 int mult = i * j;
 int mod = mult % 10;
 int div = mult / 10;
