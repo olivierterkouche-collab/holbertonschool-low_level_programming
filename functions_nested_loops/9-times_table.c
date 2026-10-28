@@ -23,7 +23,7 @@ for (i = 0; i < 10; i++)
 		{
 			_putchar('0' + div);
 		}
-		else if (mult != 0)
+		else if (j != 0)
 		{
 			_putchar(' ');
 		}
