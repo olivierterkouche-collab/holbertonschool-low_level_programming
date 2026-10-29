@@ -5,7 +5,7 @@
  * @x: first integer
  * @y: second integer
  *
- * Return: Always 0
+ * Return: void
  */
 
 int add(int x, int y)
@@ -32,5 +32,5 @@ while (invrt >= 1)
 	_putchar('0' + mod);
 	invrt = invrt / 10;
 }
-return (0);
+return;
 }
