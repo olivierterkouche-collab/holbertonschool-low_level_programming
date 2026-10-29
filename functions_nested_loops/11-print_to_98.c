@@ -60,7 +60,7 @@ if (n <= 98)
 }
 else
 {
-    for (i = n; i > 98; i--)
+    for (i = n; i >= 98; i--)
     {
         sv = i;
         invrt = 0;
