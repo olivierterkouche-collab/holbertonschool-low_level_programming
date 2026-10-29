@@ -56,7 +56,7 @@ if (n <= 98)
         {
             _putchar('\n');
         }
-    }   
+    }
 }
 else
 {
@@ -91,5 +91,6 @@ else
         {
             _putchar('\n');
         }            
-    }            
+    }
+return (0);
 }
