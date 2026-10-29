@@ -13,7 +13,7 @@ int sv;
 int invrt;
 int mv;
 
-if (n < 98)
+if (n <= 98)
 {
     for (i = n; i <= 98; i++)
     {
@@ -56,7 +56,10 @@ if (n < 98)
         {
             _putchar('\n');
         }
-    }
+    }   
+}
+else
+{
     for (i = n; i > 98; i--)
     {
         sv = i;
@@ -88,7 +91,5 @@ if (n < 98)
         {
             _putchar('\n');
         }            
-        
     }            
-}
 }
