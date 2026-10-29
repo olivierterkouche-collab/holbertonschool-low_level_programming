@@ -57,7 +57,7 @@ if (n < 98)
             _putchar('\n');
         }
     }
-    for (i = n; i >= 98; i--)
+    for (i = n; i > 98; i--)
     {
         sv = i;
         invrt = 0;
