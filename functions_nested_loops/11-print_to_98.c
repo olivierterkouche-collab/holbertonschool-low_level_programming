@@ -47,6 +47,12 @@ return;
 }
 }
 
+/**
+ * numinvert - inverts a number
+ * @sv: the number to invert
+ *
+ * Return: the inverted number
+ */
 int numinvert(int sv)
 {
 int invrt;
@@ -66,6 +72,12 @@ while (sv != 0)
 return (invrt);
 }
 
+/**
+ * itnum - counts the number of digits in a number
+ * @i: the number to count digits for
+ *
+ * Return: the number of digits
+ */
 int itnum(int i)
 {
 int it;
@@ -79,6 +91,12 @@ while (i != 0)
 return (it);
 }
 
+/**
+ * indent - prints a comma and space if the number is not 98
+ * @i: the number to check
+ *
+ * Return: void
+ */
 void indent(int i)
 {
 if (i != 98)
@@ -93,6 +111,13 @@ else
 return;
 }
 
+/**
+ * printinvert - prints the digits of a number in reverse order
+ * @it: the number of digits
+ * @invrt: the inverted number
+ *
+ * Return: void
+ */
 void printinvert(int it, int invrt)
 {
 int mv;
