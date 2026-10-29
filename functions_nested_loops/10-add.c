@@ -5,7 +5,7 @@
  * @x: first integer
  * @y: second integer
  *
- * Return: void
+ * Return: the sum of x and y
  */
 
 int add(int x, int y)
@@ -32,5 +32,5 @@ while (invrt >= 1)
 	_putchar('0' + mod);
 	invrt = invrt / 10;
 }
-return;
+return (result);
 }
