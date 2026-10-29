@@ -9,11 +9,9 @@
 void print_to_98(int n)
 {
 int i;
-int j;
 int it;
 int sv;
 int invrt;
-int mv;
 
 if (n <= 98)
 {
