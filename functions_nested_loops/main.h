@@ -25,4 +25,12 @@ int add(int, int);
 
 void print_to_98(int n);
 
+int numinvert(int sv);
+
+int itnum(int i);
+
+void indent(int i);
+
+void printinvert(int it, int invrt);
+
 #endif
