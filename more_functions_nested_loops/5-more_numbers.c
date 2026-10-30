@@ -5,12 +5,12 @@
  */
 void more_numbers(void)
 {
-	int i;
+	int i = 0;
 	int j;
 
 	while (i < 10)
 	{
-		i = 0;
+		j = 0;
 		while (j < 15)
 		{
 			if (j > 9)
@@ -18,7 +18,7 @@ void more_numbers(void)
 				_putchar('1');
 			}
 			_putchar('0' + (i % 10));
-			i++;
+			j++;
 		}
 		i++;
 		_putchar('\n');
