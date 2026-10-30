@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void fizz_buzz(void);
+
 /**
  * fizz_buzz - prints all numbers from 1 to 100 rplacing
  * replacing multiples of 3 and 5 by Fizz, Buzz or Fizz Buzz
@@ -30,4 +32,12 @@ void fizz_buzz(void)
 			printf("%d ", i);
 		}
 	}
+}
+
+/**
+ * main - executes fonction fizz_buzz
+ */
+void main(void)
+{
+	fizz_buzz();
 }
