@@ -36,8 +36,11 @@ void fizz_buzz(void)
 
 /**
  * main - executes fonction fizz_buzz
+ *
+ * Return: Allways 0
  */
-void main(void)
+int main(void)
 {
 	fizz_buzz();
+	return (0);
 }
