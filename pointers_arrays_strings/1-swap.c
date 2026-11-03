@@ -7,9 +7,12 @@
  */
 void swap_int(int *a, int *b)
 {
-	int aip;
+	int vala;
+	int valb;
 
-	aip = a;
-	a = b;
-	b = aip;
+	vala = *a;
+	valb = *b;
+
+	*a = valb;
+	*b = vala;
 }
