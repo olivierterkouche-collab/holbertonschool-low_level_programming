@@ -6,23 +6,26 @@
  * separated with a coma and space
  * @a: the array we print the content of
  * @n: the size of the the array
+ *
+ * Return: void
  */
 void print_array(int *a, int n)
 {
 	int i;
 
-	if (n > 0)
+	if (n <= 0)
 	{
-		for (i = 0; i < n; i++)
+		return;
+	}
+	for (i = 0; i < n; i++)
+	{
+		if (i == n - 1)
 		{
-			if (i == n - 1)
-			{
-				printf("%d\n", a[i]);
-			}
-			else
-			{
-				printf("%d, ", a[i]);
-			}
+			printf("%d\n", a[i]);
+		}
+		else
+		{
+			printf("%d, ", a[i]);
 		}
 	}
 }
