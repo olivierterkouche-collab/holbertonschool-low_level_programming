@@ -11,8 +11,9 @@
  */
 char *_strchr(char *s, char c)
 {
+	int null = NULL;
 	int slen = _strlen(s);
-	char *p;
+	char **p;
 	int i;
 
 	p = &s;
@@ -24,7 +25,7 @@ char *_strchr(char *s, char c)
 			return (p);
 		}
 	}
-	return (NULL);
+	return (null);
 }
 
 /**
