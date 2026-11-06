@@ -21,11 +21,10 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			p += i;
-			return (p);
+			return (*p);
 		}
 	}
-	return (null);
+	return (0);
 }
 
 /**
