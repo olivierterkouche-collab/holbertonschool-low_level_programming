@@ -11,7 +11,6 @@
  */
 char *_strchr(char *s, char c)
 {
-	int null = NULL;
 	int slen = _strlen(s);
 	char **p;
 	int i;
