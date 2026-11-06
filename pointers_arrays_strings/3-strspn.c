@@ -15,7 +15,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int sum = 0;
-	int *saveacc = accept;
+	char *saveacc = accept;
 
 	while (*s != '\0')
 	{
