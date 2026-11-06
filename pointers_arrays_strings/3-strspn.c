@@ -15,10 +15,11 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int sum = 0;
+	int *saveacc = accept;
 
 	while (*s != '\0')
 	{
-		accept = 0;
+		accept = saveacc;
 		while (*accept != '\0')
 		{
 			if (*s == *accept)
