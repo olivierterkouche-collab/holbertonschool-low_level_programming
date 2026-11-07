@@ -20,15 +20,11 @@ int _atoi(char *s)
 	while (*s != '\0')
 	{
 		if (*s == '-' && nf == 0)
-		{
 			negativesum++;
-		}
 		else if (nf != 0 && (*s <= '0' || *s >= '9'))
 		{
 			if (negativesum % 2 != 0 && negativesum % 2 != 2)
-			{
 				retval = retval * (-1);
-			}
 			return (retval);
 		}
 		else if (*s >= '0' && *s <= '9')
@@ -37,12 +33,16 @@ int _atoi(char *s)
 			for (i = 48; i <= 57; i++)
 			{
 				if (*s == i)
-				{
 					retval = retval * 10 + (i - 48);
-				}
 			}
 		}
 		s++;
+		if (*s == '\0' && nf != 0)
+		{
+			if (negativesum % 2 != 0 && negativesum % 2 != 2)
+				retval = retval * (-1);
+			return (retval);
+		}
 	}
 	return (0);
 }
