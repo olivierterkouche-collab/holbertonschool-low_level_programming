@@ -35,8 +35,7 @@ int _atoi(char *s)
 			for (i = 48; i <= 57; i++)
 			{
 				if (*s == i)
-					retval = retval * 10;
-					retval = retval + ((i - 48) * -1);
+					retval = (retval * 10) + ((i - 48) * -1);
 			}
 		}
 		s++;
