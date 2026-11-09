@@ -9,6 +9,8 @@
  * @c: char character we use to initialize the array
  *
  * Return: Returns a pointer to the begining of the created array
+ * Returns 0 if size is 0 or negative
+ * Returns NULL if malloc fails
  */
 char *create_array(unsigned int size, char c)
 {
@@ -23,6 +25,10 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 	{
 		ar[i] = c;
+	}
+	if (ar == NULL)
+	{
+		return (NULL);
 	}
 	return (ar);
 }
