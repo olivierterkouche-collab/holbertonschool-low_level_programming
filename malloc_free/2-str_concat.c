@@ -15,18 +15,17 @@ char *str_concat(char *s1, char *s2)
 {
 	unsigned int s1len;
 	unsigned int s2len;
-	unsigned int len;
 	unsigned int i;
 	unsigned int j = 0;
 	char *ar;
 
 	if (s1 == NULL)
 	{
-		*s1 = "";
+		s1[0] = "";
 	}
 	if (s2 == NULL)
 	{
-		*s2 = "";
+		s2[0] = "";
 	}
 	s1len = _strlen(s1);
 	s2len = _strlen(s2) + 1;
