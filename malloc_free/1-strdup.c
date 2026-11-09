@@ -11,7 +11,7 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int len = _strlen(str);
+	unsigned int len;
 	unsigned int i;
 	char *ar;
 
@@ -19,6 +19,7 @@ char *_strdup(char *str)
 	{
 		return (0);
 	}
+	len = _strlen(str) + 1;
 	ar = malloc(len * sizeof(char));
 	if (ar == NULL)
 	{
