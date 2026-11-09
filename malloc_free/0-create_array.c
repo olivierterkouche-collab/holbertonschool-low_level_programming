@@ -21,10 +21,17 @@ char *create_array(unsigned int size, char c)
 	{
 		return (0);
 	}
-	ar = malloc(size * sizeof(char));
+	ar = malloc(size * sizeof(char) + sizeof(char));
 	for (i = 0; i < size; i++)
 	{
-		ar[i] = c;
+		if (i == size - 1)
+		{
+			ar[i] = '\0';
+		}
+		else
+		{
+			ar[i] = c;
+		}
 	}
 	if (ar == NULL)
 	{
