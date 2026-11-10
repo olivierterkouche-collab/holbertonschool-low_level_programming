@@ -14,6 +14,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
+	unsigned int i;
 	unsigned int s1len;
 	unsigned int s2len;
 
@@ -31,10 +32,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n < s2len)
 	{
 		str[s1len + n - 1] = '\0';
-		str = realloc(str, (s1len + n) * sizeof(char));
-		if (str == NULL)
+		for (i = s1len + n; i < s1len + s2len; i++)
 		{
-			return (NULL);
+		free(str[i]);
 		}
 	}
 	return (str);
