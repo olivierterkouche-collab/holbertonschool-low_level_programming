@@ -3,11 +3,10 @@
 #include "main.h"
 
 /**
- * malloc_checked - allocates memory for a variable exits if allocation fails
- * with code 98 else initilises it with our parameter
- * @b: value we allocate memory for
+ * malloc_checked - allocates memory exits with code 98 if it fails
+ * @b: number of bytes to allocate
  *
- * Return: Returns a pointer to allocated and initialized memory
+ * Return: Returns a pointer to allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
