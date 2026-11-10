@@ -40,11 +40,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			if (i == s1len + n)
 			{
-				str[i] = "\0"
+				str[i] = "\0";
 			}
 			else if (i >= s1len)
 			{
-				str[i] = s2[j]
+				str[i] = s2[j];
 				j++;
 			}
 			else
