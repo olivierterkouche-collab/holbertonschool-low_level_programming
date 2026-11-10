@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n < s2len)
 	{
 		str[s1len + n - 1] = '\0';
-		for (i = s1len + n; i < s1len + s2len; i++)
+		for (i = s1len + s2len; i >= s1len + n; i--)
 		{
 		free(str[i]);
 		}
