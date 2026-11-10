@@ -16,8 +16,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int s1len;
 	unsigned int s2len;
-	unsigned int i;
-	unsigned int j = 0;
 
 	if (s1 == NULL)
 	{
@@ -29,48 +27,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	s1len = _strlen(s1);
 	s2len = _strlen(s2);
-	if (n <= s2len)
+	str = str_concat(s1, s2);
+	if (n < s2len)
 	{
-		str = malloc((s1len + n + 1) * sizeof(char));
+		str[s1len + n - 1] = '\0';
+		str = realloc(str, (s1len + n) * sizeof(char));
 		if (str == NULL)
 		{
 			return (NULL);
-		}
-		for (i = 0; i < s1len + n + 1; i++)
-		{
-			if (i == s1len + n)
-			{
-				str[i] = '\0';
-			}
-			else if (i >= s1len)
-			{
-				str[i] = s2[j];
-				j++;
-			}
-			else
-			{
-				str[i] = s1[i];
-			}
-		}
-	}
-	else
-	{
-		str = malloc((s1len + s2len + 1) * sizeof(char));
-		if (str == NULL)
-		{
-			return (NULL);
-		}
-		for (i = 0; i <= s1len + s2len; i++)
-		{
-			if (i >= s1len)
-			{
-				str[i] = s2[j];
-				j++;
-			}
-			else
-			{
-				str[i] = s1[i];
-			}
 		}
 	}
 	return (str);
@@ -93,4 +57,48 @@ int _strlen(char *s)
 		strilen++;
 	}
 	return (strilen);
+}
+
+/**
+ * str_concat - takes two strings allocates memory to contain both
+ * and creates a string containing both entries
+ * @s1: String 1
+ * @s2: String 2
+ *
+ * Return: Returns a pointer to the new string containing bith entries
+ * or NULL if malloc fails
+ */
+char *str_concat(char *s1, char *s2)
+{
+	unsigned int s1len;
+	unsigned int s2len;
+	unsigned int i;
+	unsigned int j = 0;
+	char *ar;
+
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	s1len = _strlen(s1);
+	s2len = _strlen(s2) + 1;
+	ar = malloc((s1len + s2len) * sizeof(char));
+	if (ar == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < s1len; i++)
+	{
+		ar[i] = s1[i];
+	}
+	for (i = s1len; i < (s1len + s2len); i++)
+	{
+		ar[i] = s2[j];
+		j++;
+	}
+	return (ar);
 }
