@@ -6,6 +6,8 @@
  * malloc_checked - allocates memory for a variable exits if allocation fails
  * with code 98 else initilises it with our parameter
  * @b: value we allocate memory for
+ *
+ * Return: Returns a pointer to allocated and initialized memory
  */
 void *malloc_checked(unsigned int b)
 {
@@ -17,4 +19,5 @@ void *malloc_checked(unsigned int b)
 		exit(98);
 	}
 	*ptr = b;
+	return (ptr);
 }
