@@ -49,7 +49,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			}
 		}
 		free(concat);
-        concat = NULL;
 		return (str);
 	}
 	return (concat);
