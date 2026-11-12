@@ -1,9 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
 
-#include <stdio.h>
-#include <stdlib.h>
-
 /**
  * struct dog - struct containing informations about a dog
  * @name: name of the dog
@@ -19,8 +16,7 @@ struct dog
 	char *owner;
 };
 
-typdef struct dog
-{
+typdef struct dog{
 	char *name;
 	float age;
 	char *owner;
