@@ -3,6 +3,7 @@
 
 void addition(void);
 void subtraction(void);
+void multiplication(void);
 
 /**
  * main - Welcomes the user presenting choices to it on how
@@ -32,6 +33,10 @@ int main(void)
 		if (choice == 2)
 		{
 			subtraction();
+		}
+		if (choice == 3)
+		{
+			multiplication();
 		}
 	}
 	printf("Bye !");
@@ -72,5 +77,23 @@ void subtraction(void)
 	printf("Enter the second value : ");
 	scanf("%d", &b);
 	result = a - b;
+	printf("Result: %d\n", result);
+}
+
+/**
+ * multiplication - Prompts the user for 2 numbers and multiply them
+ * then prints the result
+ */
+void multiplication(void)
+{
+	int a;
+	int b;
+	int result;
+
+	printf("Enter the first value : ");
+	scanf("%d", &a);
+	printf("Enter the second value : ");
+	scanf("%d", &b);
+	result = a * b;
 	printf("Result: %d\n", result);
 }
