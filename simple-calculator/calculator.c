@@ -4,6 +4,7 @@
 void addition(void);
 void subtraction(void);
 void multiplication(void);
+void division(void);
 
 /**
  * main - Welcomes the user presenting choices to it on how
