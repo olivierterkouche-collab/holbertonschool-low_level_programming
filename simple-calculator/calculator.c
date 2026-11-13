@@ -30,7 +30,7 @@ int main(void)
 			printf("1");
 			printf("Enter the first value : ");
 			scanf("%d", &vala);
-			printf("Enter the second value : ")
+			printf("Enter the second value : ");
 			scanf("%d", &valb);
 			result = vala + valb;
 			printf("Result: %d", result);
