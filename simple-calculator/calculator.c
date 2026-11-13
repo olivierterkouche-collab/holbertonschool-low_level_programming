@@ -11,6 +11,9 @@
 int main(void)
 {
 	int choice = 1;
+	int vala;
+	int valb;
+	int result;
 
 	while (choice != 0)
 	{
@@ -21,6 +24,16 @@ int main(void)
 		if (choice < 0 || choice > 4)
 		{
 			printf("%d\nInvalid choice\n", choice);
+		}
+		if (choice == 1)
+		{
+			printf("1");
+			printf("Enter the first value : ");
+			scanf("%d", &vala);
+			printf("Enter the second value : ")
+			scanf("%d", &valb);
+			result = vala + valb;
+			printf("Result: %d", result);
 		}
 	}
 	printf("Bye !");
