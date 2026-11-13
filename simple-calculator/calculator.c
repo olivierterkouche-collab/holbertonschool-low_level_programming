@@ -38,6 +38,10 @@ int main(void)
 		{
 			multiplication();
 		}
+		if (choice == 4)
+		{
+			division();
+		}
 	}
 	printf("Bye !");
 	return (0);
@@ -95,5 +99,30 @@ void multiplication(void)
 	printf("Enter the second value : ");
 	scanf("%d", &b);
 	result = a * b;
+	printf("Result: %d\n", result);
+}
+
+/**
+ * subtraction - Prompts the user for 2 numbers
+ * then divides the first by the second
+ * and prints the result
+ * disposes of a security fobiding division by zero
+ */
+void division(void)
+{
+	int a;
+	int b;
+	int result;
+
+	printf("Enter the first value : ");
+	scanf("%d", &a);
+	printf("Enter the second value : ");
+	scanf("%d", &b);
+	if (b == 0)
+	{
+		printf("Error: division by zero\n");
+		return;
+	}
+	result = a / b;
 	printf("Result: %d\n", result);
 }
