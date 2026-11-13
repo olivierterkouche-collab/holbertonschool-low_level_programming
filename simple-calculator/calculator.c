@@ -5,8 +5,10 @@
  * main - Welcomes the user presenting choices to it on how
  * it would like to use our awsome calculator for now only the
  * 0 option to quit works
+ *
+ * Return: Returns 0 on program completion
  */
-void main(void)
+int main(void)
 {
 	int choice;
 
@@ -17,6 +19,7 @@ void main(void)
 	if (choice == 0)
 	{
 		printf("Bye !");
-		return;
+		return (0);
 	}
+	return (0);
 }
