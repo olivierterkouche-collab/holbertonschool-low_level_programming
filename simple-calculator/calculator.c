@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void addition(void);
+void subtraction(void);
+
 /**
  * main - Welcomes the user presenting choices to it on how
  * it would like to use our awsome calculator for now only the
@@ -11,9 +14,6 @@
 int main(void)
 {
 	int choice = 1;
-	int vala;
-	int valb;
-	int result;
 
 	while (choice != 0)
 	{
@@ -27,15 +27,50 @@ int main(void)
 		}
 		if (choice == 1)
 		{
-			printf("1");
-			printf("Enter the first value : ");
-			scanf("%d", &vala);
-			printf("Enter the second value : ");
-			scanf("%d", &valb);
-			result = vala + valb;
-			printf("Result: %d", result);
+			addition();
+		}
+		if (choice == 2)
+		{
+			subtraction();
 		}
 	}
 	printf("Bye !");
 	return (0);
+}
+
+/**
+ * addition - Prompts the user for 2 numbers then adds them together
+ * and prints the result
+ */
+void addition(void)
+{
+	int a;
+	int b;
+	int result;
+
+	printf("Enter the first value : ");
+	scanf("%d", &a);
+	printf("Enter the second value : ");
+	scanf("%d", &b);
+	result = a + b;
+	printf("Result: %d\n", result);
+}
+
+/**
+ * subtraction - Prompts the user for 2 numbers
+ * then subtract the second to the first
+ * and prints the result
+ */
+void subtraction(void)
+{
+	int a;
+	int b;
+	int result;
+
+	printf("Enter the first value : ");
+	scanf("%d", &a);
+	printf("Enter the second value : ");
+	scanf("%d", &b);
+	result = a - b;
+	printf("Result: %d\n", result);
 }
