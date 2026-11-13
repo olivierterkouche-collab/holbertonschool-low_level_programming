@@ -10,16 +10,19 @@
  */
 int main(void)
 {
-	int choice;
+	int choice = 1;
 
-	printf("Welcome to the one and only Awsome Calculator!\n");
-	printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n");
-	printf("choice : ");
-	scanf("%d", &choice);
-	if (choice == 0)
+	while (choice != 0)
 	{
-		printf("Bye !");
-		return (0);
+		printf("Welcome to the one and only Awsome Calculator!\n");
+		printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n");
+		printf("choice : ");
+		scanf("%d", &choice);
+		if (choice < 0 || choice > 4)
+		{
+			printf("%d\nInvalid choice\n", choice);
+		}
 	}
+	printf("Bye !");
 	return (0);
 }
