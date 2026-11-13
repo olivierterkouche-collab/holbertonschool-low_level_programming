@@ -44,7 +44,7 @@ int main(void)
 			division();
 		}
 	}
-	printf("Bye !");
+	printf("Bye !\n");
 	return (0);
 }
 
