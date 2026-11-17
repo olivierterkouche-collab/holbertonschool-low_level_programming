@@ -9,14 +9,13 @@
  * @size: size of the array
  * @cmp: a pointer to the used function
  *
- * Return: Returns the number of match found in the array
+ * Return: Returns the index of the first match found in the array
  * by the called function
  * or -1 if no matches were found or if the function fails
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
-	int result = 0;
 
 	if (size <= 0)
 	{
@@ -26,15 +25,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		if (cmp(array[i]) != 0)
 		{
-			result++;
+			return (i);
 		}
 	}
-	if (result == 0)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (result);
-	}
+	return (-1);
 }
