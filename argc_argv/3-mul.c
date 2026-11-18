@@ -16,7 +16,7 @@ int main(int argc __attribute__((unused)), char **argv)
 
 	if (argv[1] == NULL || argv[2] == NULL)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	arg1 = atoi(argv[1]);
