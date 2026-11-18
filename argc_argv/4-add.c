@@ -12,9 +12,9 @@
  */
 int main(int argc, char **argv)
 {
-	int i;
-	int j;
-	int sum = 0;
+	unsigned int i;
+	unsigned int j;
+	int sum = 0; 
 
 	for (i = 1; i < argc; i++)
 	{
