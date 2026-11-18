@@ -9,11 +9,10 @@
  * Return: Returns 1 if the program fails or 0 if it executes
  * sucessfully
  */
-int main(int argc, char **argv)
+int main(int argc __attribute__((unused)), char **argv)
 {
 	int arg1;
 	int arg2;
-	int result;
 
 	if (argv[1] == NULL || argv[2] == NULL)
 	{
