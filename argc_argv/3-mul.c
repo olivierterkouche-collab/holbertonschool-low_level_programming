@@ -15,13 +15,13 @@ int main(int argc, char **argv)
 	int arg2;
 	int result;
 
-	arg1 = atoi(argv[1]);
-	arg2 = atoi(argv[2]);
-	if (arg1 == NULL || arg2 == NULL)
+	if (argv[1] == NULL || argv[2] == NULL)
 	{
 		printf("Error");
 		return (1);
 	}
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[2]);
 	printf("%d\n", arg1 * arg2);
 	return (0);
 }
