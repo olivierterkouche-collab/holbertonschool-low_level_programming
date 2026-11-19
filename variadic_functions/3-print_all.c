@@ -13,8 +13,13 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *idnt = ", ", *strarg;
 
+	while (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
 	va_start(arg, format);
-	while (format[i] != '\0' && format != NULL)
+	while (format[i] != '\0')
 	{
 		if (format[i + 1] == '\0')
 			idnt = "";
@@ -37,8 +42,6 @@ void print_all(const char * const format, ...)
 					break;
 				}
 				printf("%s%s", strarg, idnt);
-				break;
-			default:
 				break;
 		}
 		i++;
