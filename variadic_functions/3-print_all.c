@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 	va_list arg;
 	int i = 0;
-	char *idnt = ", ";
+	char *idnt = ", ", *strarg;
 
 	while (format == NULL)
 	{
@@ -35,12 +35,13 @@ void print_all(const char * const format, ...)
 				printf("%f%s", va_arg(arg, double), idnt);
 				break;
 			case 's':
-				if (format[i] == NULL)
+				strarg = va_arg(arg, char *);
+				if (strarg == NULL)
 				{
 					printf("(nil)");
 					break;
 				}
-				printf("%s%s", va_arg(arg, char *), idnt);
+				printf("%s%s", strarg, idnt);
 				break;
 			default:
 				break;
