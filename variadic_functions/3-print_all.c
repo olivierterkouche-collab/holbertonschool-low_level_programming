@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0')
 	{
 		if (format[i + 1] == '\0')
-			idnt = "";
+			idnt = "\n";
 		switch (format[i])
 		{
 			case 'c':
@@ -48,6 +48,5 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	printf("\n");
 	va_end(arg);
 }
