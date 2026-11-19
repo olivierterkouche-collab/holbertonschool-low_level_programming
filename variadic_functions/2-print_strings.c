@@ -9,7 +9,7 @@
  * @n: Number of given parameters
  * @...: Variadic function indicator
  */
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list arg;
     char *args;
