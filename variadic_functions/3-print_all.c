@@ -12,8 +12,6 @@ void print_all(const char * const format, ...)
 	va_list arg;
 	unsigned int i = 0;
 
-	if (format == NULL)
-		return;
 	va_start(arg, format);
 	while (format[i] != '\0')
 	{
@@ -51,6 +49,8 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
+		if (format[i + 1] != '\0')
+			printf(", ");
 		i++;
 	}
 	printf("\n");
