@@ -13,6 +13,11 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *idnt = ", ";
 
+	while (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
 	va_start(arg, format);
 	while (format[i] != '\0')
 	{
@@ -30,7 +35,7 @@ void print_all(const char * const format, ...)
 				printf("%f%s", va_arg(arg, double), idnt);
 				break;
 			case 's':
-				if (strarg == NULL)
+				if (format[i] == NULL)
 				{
 					printf("(nil)");
 					break;
