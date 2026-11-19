@@ -33,5 +33,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s%d\n", separator, args);
 	}
+	if (n == 0)
+		printf("\n");
 	va_end(arg);
 }
