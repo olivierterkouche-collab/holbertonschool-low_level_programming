@@ -13,16 +13,11 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *idnt = ", ", *strarg;
 
-	while (format == NULL)
-	{
-		printf("\n");
-		return;
-	}
 	va_start(arg, format);
-	while (format[i] != '\0')
+	while (format[i] != '\0' && format != NULL)
 	{
 		if (format[i + 1] == '\0')
-			idnt = "\n";
+			idnt = "";
 		switch (format[i])
 		{
 			case 'c':
@@ -48,5 +43,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
+	printf("\n");
 	va_end(arg);
 }
