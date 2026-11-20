@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	int val1 = atoi(argv[1]), val2 = atoi(argv[3]), res, i;
 	op_t ope;
 
-	for (i = 1; i < 4; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (argv[i] == NULL)
 		{
