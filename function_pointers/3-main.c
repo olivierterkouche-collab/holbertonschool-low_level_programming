@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	res = f(val1, val2);
+	res = ope.f(val1, val2);
 	printf("%d\n", res);
 	return (0);
 }
