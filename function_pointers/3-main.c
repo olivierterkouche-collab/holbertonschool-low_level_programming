@@ -12,7 +12,7 @@
  */
 int main(int argc, char **argv)
 {
-	int val1 = atoi(argv[1]), val2 = atoi(argv[3]), res;
+	int val1, val2, res;
 	op_t ope;
 
 	if (argc != 4)
@@ -20,6 +20,8 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
+	val1 = atoi(argv[1]);
+	val2 = atoi(argv[3]);
 	ope.op = argv[2];
 	ope.f = get_op_func(ope.op);
 	if (ope.f == NULL)
