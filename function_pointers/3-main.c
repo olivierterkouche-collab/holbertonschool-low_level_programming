@@ -12,13 +12,16 @@
  */
 int main(int argc, char **argv)
 {
-	int val1 = atoi(argv[1]), val2 = atoi(argv[3]), res;
+	int val1 = atoi(argv[1]), val2 = atoi(argv[3]), res, i;
 	op_t ope;
 
-	if (argc != 4)
+	for (i = 1; i < 4; i++)
 	{
-		printf("Error\n");
-		exit(98);
+		if (argv[i] == NULL)
+		{
+			printf("Error\n");
+			exit(98);
+		}
 	}
 	ope.op = argv[2];
 	ope.f = get_op_func(ope.op);
