@@ -12,7 +12,7 @@
  */
 int main(int argc, char **argv)
 {
-	int val1 = atoi(argv[1]), val2 = atoi(argv[3]), res, i;
+	int val1 = atoi(argv[1]), val2 = atoi(argv[3]), res;
 	op_t ope;
 
 	if (argc != 4)
