@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	ope.op = argv[2];
-	ope.f = get_op_func(ope);
+	ope.f = get_op_func(ope.op);
 	if (ope.f == NULL)
 	{
 		printf("Error\n");
