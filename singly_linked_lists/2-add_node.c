@@ -31,7 +31,7 @@ list_t *add_node(list_t **head, const char *str)
  * Return: Returns strilen the value
  * containing the counted string elements
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int i;
 	int strilen = 0;
