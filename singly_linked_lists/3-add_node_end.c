@@ -17,7 +17,15 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	cursor = *head;
 	if (cursor == NULL)
-		return (NULL);
+	{
+		new = malloc(sizeof(list_t));
+		if (new == NULL)
+			return (NULL);
+		new->str = strdup(str);
+		new->len = _strlen(str);
+		new->next = NULL;
+		return (new);
+	}
 	while (cursor->next != NULL)
 	{
 		cursor = cursor->next;
